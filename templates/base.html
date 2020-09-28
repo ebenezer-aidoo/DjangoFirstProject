@@ -1,0 +1,19 @@
+
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    {% include 'navbar.html'%}
+    <link rel="stylesheet" type="text/css", href="{% static 'bootstrap-4.5.2-dist/css/bootstrap.min.css' %}"/>
+
+
+</head>
+<body>
+
+{% block body %} {% endblock %}
+
+</body>
+</html>
